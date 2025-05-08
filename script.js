@@ -1,18 +1,13 @@
 const plants = [
     {
-        name: "Jahe",
-        image: "images/Jahe.jpg",
-        info: "Jahe membantu mengatasi masuk angin dan meningkatkan imunitas."
-    },
-    {
         name: "Kunyit",
         image: "images/Kunyit.jpg",
         info: "Kunyit memiliki sifat anti-inflamasi dan baik untuk pencernaan."
     },
     {
-        name: "Lidah Buaya",
-        image: "images/LidahBuaya.jpg",
-        info: "Lidah Buaya bermanfaat untuk perawatan kulit dan luka."
+        name: "Jahe",
+        image: "images/Jahe.jpg",
+        info: "Jahe membantu mengatasi masuk angin dan meningkatkan imunitas."
     },
     {
         name: "Temulawak",
@@ -33,6 +28,11 @@ const plants = [
         name: "Kemangi",
         image: "images/Kemangi.jpg",
         info: "Kemangi membantu mengurangi stres dan meningkatkan nafsu makan."
+    },
+    {
+        name: "Lidah Buaya",
+        image: "images/LidahBuaya.jpg",
+        info: "Lidah Buaya bermanfaat untuk perawatan kulit dan luka."
     },
     {
         name: "Kencur",
