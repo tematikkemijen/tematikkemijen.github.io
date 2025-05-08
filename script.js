@@ -1,17 +1,17 @@
 const plants = [
     {
         name: "Jahe",
-        image: "images/Jahe.jpg",
+        image: "images/jahe.jpg",
         info: "Jahe membantu mengatasi masuk angin dan meningkatkan imunitas."
     },
     {
         name: "Kunyit",
-        image: "images/Kunyit.jpg",
+        image: "images/kunyit.jpg",
         info: "Kunyit memiliki sifat anti-inflamasi dan baik untuk pencernaan."
     },
     {
         name: "Lidah Buaya",
-        image: "images/Lidah Buaya.jpg",
+        image: "images/lidah buaya.jpg",
         info: "Lidah Buaya bermanfaat untuk perawatan kulit dan luka."
     },
     {
