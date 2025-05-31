@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-100 font-sans">
-    <header class="text-white text-center py-12" style="background-image: url('images/bg.jpg'); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken;">
-        <h1 class="text-4xl md:text-5xl font-bold">KKN TEMATIK KELURAHAN KEMIJEN</h1>
+    <header class="relative text-white text-center py-12" style="background-image: url('imageLomba/all.jpg'); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken;">
+        <a href="index.html" class="hidden absolute top-4 right-4 bg-blue-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+            Home
+        </a>
+        <h1 class="text-4xl md:text-5xl font-bold">TAMAN TOGA RW 09 KELURAHAN KEMIJEN</h1>
+        <h1 class="text-2xl md:text-5xl font-bold">KKN TEMATIK IV UNIVERSITAS SEMARANG</h1>
     </header>
 
     <section class="container mx-auto py-12 px-4">
@@ -18,12 +22,55 @@
         </div>
     </section>
 
+    <section class="container mx-auto py-8 px-4 text-center">
+        <a href="documentation.html" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+            DOKUMENTASI KEGIATAN
+        </a>
+    </section>
+
+    <div id="plant-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white rounded-lg shadow-xl max-w-lg w-full mx-4 p-6 relative">
+            <button id="close-modal" class="absolute top-2 right-2 text-gray-600 hover:text-gray-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <img id="modal-image" src="" alt="" class="w-full h-48 object-cover rounded-t-lg mb-4">
+            <div class="p-4">
+                <h3 class="text-2xl font-bold text-gray-800 mb-2" id="modal-title"></h3>
+                <div class="mb-4">
+                    <p class="font-semibold text-gray-800">Nama:</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li><span class="font-medium">Nama umum:</span> <span id="modal-nama-umum"></span></li>
+                        <li><span class="font-medium">Nama ilmiah:</span> <i id="modal-nama-ilmiah"></i></li>
+                        <li><span class="font-medium">Jenis tanaman:</span> <span id="modal-jenis-tanaman"></span></li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <p class="font-semibold text-gray-800">Deskripsi:</p>
+                    <p id="modal-deskripsi" class="text-gray-600"></p>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-800">Manfaat:</p>
+                    <div class="mb-2">
+                        <p class="font-medium text-gray-700">1. Manfaat Kuliner:</p>
+                        <ul id="modal-manfaat-kuliner" class="list-disc list-inside text-gray-600"></ul>
+                    </div>
+                    <div>
+                        <p class="font-medium text-gray-700">2. Manfaat Kesehatan (Obat Tradisional):</p>
+                        <ul id="modal-manfaat-kesehatan" class="list-disc list-inside text-gray-600"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="bg-green-700 text-white py-12">
         <div class="container mx-auto px-4">
             <h2 class="text-2xl font-semibold text-center mb-4">KKN TEMATIK IV 2025 UNIVERSITAS SEMARANG</h2>
             <div class="text-center space-y-2">
                 <p><strong>Tanggal Pelaksanaan:</strong> 15 April - 13 Juni 2025</p>
-                <p><strong>Anggota KKN:</strong> Shinta Raffi</p>
+                <p><strong>Anggota KKN:</strong> Shinta Raffi </p>
             </div>
         </div>
     </footer>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi KKN Tematik</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .photo-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .photo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .photo-card img {
+            object-fit: cover;
+            height: 200px;
+            width: 100%;
+        }
+        @media (min-width: 768px) {
+            .photo-card img {
+                height: 400px; /* Adjust height for larger screens */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="relative text-white text-center py-12" style="background-image: url('imageLomba/all.jpg'); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken;">
+        <a href="index.html" class="absolute top-2 right-2 text-white font-semibold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+            Home
+        </a>
+        <h1 class="text-4xl md:text-5xl font-bold">Galeri Singkat Taman Toga</h1>
+    </header>
+
+    <section class="container mx-auto py-12 px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="photo-card shadow-lg">
+                <img src="imageLomba/lomba.jpg" alt="Kegiatan 1">
+                <div class="p-6">
+                    <h3 class="mb-2">Kegiatan Lomba</h3>
+                </div>
+            </div>
+
+            <div class="photo-card shadow-lg">
+                <img src="imageLomba/tanaman1.jpg" alt="Kegiatan 1">
+                <div class="p-6">
+                    <h3 class="mb-2">Tanaman Hasil Lomba</h3>
+                </div>
+            </div>
+
+            <div class="photo-card shadow-lg">
+                <img src="imageLomba/tanaman2.jpg" alt="Kegiatan 1">
+                <div class="p-6">
+                    <h3 class="mb-2">Tanaman Hasil Lomba</h3>
+                </div>
+            </div>
+
+            <div class="photo-card shadow-lg">
+                <img src="imageLomba/juara.jpg" alt="Kegiatan 1">
+                <div class="p-6">
+                    <h3 class="mb-2">Penyerahan Hadiah</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto py-12 px-4 text-center">
+        <div class="photo-card shadow-lg mx-auto max-w-4xl">
+            <img src="imageLomba/all.jpg" alt="Foto Bersama" class="w-full h-auto object-cover">
+            <div class="p-6">
+                <h3 class="mb-2">Foto Bersama</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto py-8 px-4 text-center">
+        <a href="https://drive.google.com/drive/folders/1auAdTYx3ff1JjpsJV-iRTzrtyTLfmIWc?usp=sharing" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+            DOKUMENTASI FULL DRIVE
+        </a>
+    </section>
+
+    <footer class="bg-green-700 text-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold text-center mb-4">KKN TEMATIK IV 2025 UNIVERSITAS SEMARANG</h2>
+            <div class="text-center space-y-2">
+                <p><strong>Tanggal Pelaksanaan:</strong> 15 April - 13 Juni 2025</p>
+                <p><strong>Anggota KKN:</strong> Shinta Raffi</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
